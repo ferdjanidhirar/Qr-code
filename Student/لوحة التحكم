@@ -1,1 +1,176 @@
+<!DOCTYPE html>
 
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#8af5be",
+                        "secondary": "#006c47",
+                        "outline": "#737785",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#ccd8ff",
+                        "tertiary-fixed": "#ffdad6",
+                        "inverse-primary": "#b2c5ff",
+                        "on-primary": "#ffffff",
+                        "primary": "#0040a1",
+                        "primary-container": "#0056d2",
+                        "on-primary-fixed-variant": "#0040a1",
+                        "on-secondary-fixed-variant": "#005235",
+                        "on-background": "#191c1d",
+                        "tertiary-container": "#ba1b20",
+                        "surface-variant": "#e1e3e4",
+                        "inverse-on-surface": "#f0f1f2",
+                        "tertiary": "#940010",
+                        "surface-container-low": "#f3f4f5",
+                        "secondary-fixed-dim": "#71dba6",
+                        "surface-container": "#edeeef",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#8df7c1",
+                        "primary-fixed": "#dae2ff",
+                        "on-secondary-container": "#00714b",
+                        "on-primary-fixed": "#001847",
+                        "surface-bright": "#f8f9fa",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "tertiary-fixed-dim": "#ffb3ac",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "surface-dim": "#d9dadb",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#2e3132",
+                        "on-tertiary-container": "#ffcdc8",
+                        "background": "#f8f9fa",
+                        "surface-container-high": "#e7e8e9",
+                        "surface": "#f8f9fa",
+                        "on-tertiary-fixed-variant": "#930010",
+                        "on-tertiary-fixed": "#410003",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-surface-variant": "#424654",
+                        "surface-tint": "#0056d2",
+                        "outline-variant": "#c3c6d6",
+                        "on-secondary-fixed": "#002113",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #0040a1 0%, #0056d2 100%);
+        }
+        .glass-header {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- Simplified TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-5 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-surface-container">
+<div class="flex items-center gap-4">
+<span class="text-2xl font-black text-primary dark:text-blue-400">منصة الأستاذ</span>
+</div>
+<div class="flex items-center gap-8">
+<nav class="hidden md:flex gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-['Manrope'] text-base" href="#">الرئيسية</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="notifications">notifications</span>
+</button>
+<img alt="صورة الملف الشخصي للأستاذ" class="w-10 h-10 rounded-full object-cover border-2 border-primary-fixed" data-alt="professional portrait of a male professor in a scholarly setting with soft ambient library lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxK7KeefEyx_rMi5KUHKdksqa5Hpab_d9zWLqDs_mL6y3WTmpMN5sxdwcBqmkfuDDY-gHGU5KPl_l1cjirLNytFbll9EMyCmVMrAHVz2zl3qVCLsfkpJhSLJBwm03duVFizeTdy417sDfiAdBFpKLwbfymdYMo0kdD4FhjYxbijh_CM0qzHrfUbmHCYlirpFtlnPBtyjCI0bY2S_A0Irozt7fJuNFpQSQwILN8NEnPUUE5eHobPd5s1ZVAk1NDj3NCYjToKx4iGOZT"/>
+</div>
+</div>
+</header>
+<!-- Main Content Area: Centered and Spacious -->
+<main class="flex-grow pt-32 pb-20 px-6">
+<div class="max-w-6xl mx-auto">
+<!-- Header Section -->
+<section class="mb-16 text-center">
+<h1 class="text-5xl font-extrabold text-on-surface tracking-tight mb-4">لوحة التحكم</h1>
+<p class="text-on-surface-variant text-xl">مرحباً بك مجدداً، اختر إجراءً للبدء</p>
+</section>
+<!-- Main Action Cards: Focused Bento Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Action Card 1: QR Code -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-[2.5rem] p-10 transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 cursor-pointer border border-surface-container-high/50">
+<div class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-full -mr-20 -mt-20 transition-transform group-hover:scale-125 duration-700"></div>
+<div class="flex flex-col h-full justify-between gap-12 relative z-10">
+<div class="w-20 h-20 bg-primary-fixed flex items-center justify-center rounded-3xl">
+<span class="material-symbols-outlined text-primary text-5xl" data-icon="qr_code_2">qr_code_2</span>
+</div>
+<div>
+<h3 class="text-3xl font-black mb-4">توليد رمز QR</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">قم بتوليد رمز الحضور الذكي للمحاضرة الحالية لتسجيل الطلاب تلقائياً وبسرعة.</p>
+</div>
+<div class="flex items-center text-primary font-black gap-3 text-lg">
+<span>ابدأ الآن</span>
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+</div>
+</div>
+<!-- Action Card 2: Attendance -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-[2.5rem] p-10 transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-secondary/10 cursor-pointer border border-surface-container-high/50">
+<div class="absolute top-0 right-0 w-40 h-40 bg-secondary/5 rounded-full -mr-20 -mt-20 transition-transform group-hover:scale-125 duration-700"></div>
+<div class="flex flex-col h-full justify-between gap-12 relative z-10">
+<div class="w-20 h-20 bg-secondary-fixed flex items-center justify-center rounded-3xl">
+<span class="material-symbols-outlined text-secondary text-5xl" data-icon="group">group</span>
+</div>
+<div>
+<h3 class="text-3xl font-black mb-4">مشاهدة الحضور</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">مراجعة كشوفات الحضور والغياب اليومية وتصدير التقارير الأكاديمية المفصلة.</p>
+</div>
+<div class="flex items-center text-secondary font-black gap-3 text-lg">
+<span>عرض التفاصيل</span>
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+</div>
+</div>
+<!-- Action Card 3: Excuse -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-[2.5rem] p-10 transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-tertiary/10 cursor-pointer border border-surface-container-high/50">
+<div class="absolute top-0 right-0 w-40 h-40 bg-tertiary/5 rounded-full -mr-20 -mt-20 transition-transform group-hover:scale-125 duration-700"></div>
+<div class="flex flex-col h-full justify-between gap-12 relative z-10">
+<div class="w-20 h-20 bg-tertiary-fixed flex items-center justify-center rounded-3xl">
+<span class="material-symbols-outlined text-tertiary text-5xl" data-icon="description">description</span>
+</div>
+<div>
+<h3 class="text-3xl font-black mb-4">الغياب بمبرر</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">إدارة الطلبات المقدمة من الطلاب لتبرير الغياب ومراجعة الوثائق المرفقة.</p>
+</div>
+<div class="flex items-center text-tertiary font-black gap-3 text-lg">
+<span>مراجعة الطلبات</span>
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Contextual Notification (Optional Clean Minimalist Info) -->
+</div>
+</main>
+</body></html>
