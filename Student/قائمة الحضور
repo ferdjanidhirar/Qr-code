@@ -1,1 +1,193 @@
+<!DOCTYPE html>
 
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>قائمة الحضور - نظام حضور الطلاب</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#001847",
+                    "on-tertiary-container": "#ffcdc8",
+                    "primary-fixed": "#dae2ff",
+                    "tertiary-fixed": "#ffdad6",
+                    "inverse-surface": "#2e3132",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e1e3e4",
+                    "secondary-container": "#8af5be",
+                    "surface-dim": "#d9dadb",
+                    "surface-bright": "#f8f9fa",
+                    "on-surface": "#191c1d",
+                    "on-primary-fixed-variant": "#0040a1",
+                    "surface": "#f8f9fa",
+                    "on-secondary-fixed": "#002113",
+                    "on-background": "#191c1d",
+                    "error": "#ba1a1a",
+                    "primary-container": "#0056d2",
+                    "on-secondary-container": "#00714b",
+                    "primary": "#0040a1",
+                    "secondary": "#006c47",
+                    "tertiary-container": "#ba1b20",
+                    "secondary-fixed": "#8df7c1",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#930010",
+                    "tertiary": "#940010",
+                    "on-primary-container": "#ccd8ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#edeeef",
+                    "secondary-fixed-dim": "#71dba6",
+                    "inverse-primary": "#b2c5ff",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#0056d2",
+                    "on-surface-variant": "#424654",
+                    "on-secondary-fixed-variant": "#005235",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#ffb3ac",
+                    "on-tertiary-fixed": "#410003",
+                    "outline": "#737785",
+                    "primary-fixed-dim": "#b2c5ff",
+                    "outline-variant": "#c3c6d6",
+                    "surface-container-high": "#e7e8e9",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-error": "#ffffff",
+                    "background": "#f8f9fa"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["IBM Plex Sans Arabic", "Manrope", "sans-serif"],
+                    "body": ["IBM Plex Sans Arabic", "Inter", "sans-serif"],
+                    "label": ["IBM Plex Sans Arabic", "Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .editorial-shadow {
+            box-shadow: 0 12px 24px rgba(25, 28, 29, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-6 md:px-12 py-20">
+<!-- Page Header Section -->
+<!-- Attendance Content Layering -->
+<section class="bg-surface-container-low rounded-3xl p-4 md:p-8">
+<!-- Table Header (Non-Standard Design) -->
+<div class="grid grid-cols-12 px-6 py-4 mb-4 font-headline font-bold text-sm uppercase tracking-wider text-[#0056D2]">
+<div class="col-span-5 md:col-span-6">المادة</div>
+<div class="col-span-4 md:col-span-3">التاريخ</div>
+<div class="col-span-3 text-left md:text-right">الحالة</div>
+</div>
+<!-- Attendance List Items -->
+<div class="space-y-3">
+<!-- Item 1: Attended -->
+<div class="grid grid-cols-12 items-center bg-surface-container-lowest px-6 py-6 rounded-2xl editorial-shadow hover:bg-white transition-all group">
+<div class="col-span-5 md:col-span-6">
+<span class="font-headline font-semibold text-lg text-black">هندسة البرمجيات المتطورة</span>
+</div>
+<div class="col-span-4 md:col-span-3 flex items-center gap-3">
+<div class="hidden md:flex w-10 h-10 rounded-full bg-secondary-fixed/30 items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-xl">calendar_today</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold font-body text-black">١٥ أكتوبر ٢٠٢٣</span>
+<span class="text-xs text-black">١٠:٣٠ صباحاً</span>
+</div>
+</div>
+<div class="col-span-3 flex justify-end">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-4 py-1.5 rounded-full text-sm font-bold flex items-center gap-1" style="color: black;">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            حاضر
+                        </span>
+</div>
+</div>
+<!-- Item 2: Absent -->
+<div class="grid grid-cols-12 items-center bg-surface-container-lowest px-6 py-6 rounded-2xl editorial-shadow hover:bg-white transition-all group">
+<div class="col-span-5 md:col-span-6">
+<span class="font-headline font-semibold text-lg text-black">قواعد البيانات الموزعة</span>
+</div>
+<div class="col-span-4 md:col-span-3 flex items-center gap-3">
+<div class="hidden md:flex w-10 h-10 rounded-full bg-tertiary-fixed/30 items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-xl">calendar_today</span>
+</div>
+<span class="font-bold font-body text-black">١٢ أكتوبر ٢٠٢٣</span>
+</div>
+<div class="col-span-3 flex justify-end">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-4 py-1.5 rounded-full text-sm font-bold flex items-center gap-1" style="color: black;">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">cancel</span>
+                            غائب
+                        </span>
+</div>
+</div>
+<!-- Item 3: Attended -->
+<div class="grid grid-cols-12 items-center bg-surface-container-lowest px-6 py-6 rounded-2xl editorial-shadow hover:bg-white transition-all group">
+<div class="col-span-5 md:col-span-6">
+<span class="font-headline font-semibold text-lg text-black">أمن الشبكات والمعلومات</span>
+</div>
+<div class="col-span-4 md:col-span-3 flex items-center gap-3">
+<div class="hidden md:flex w-10 h-10 rounded-full bg-secondary-fixed/30 items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-xl">calendar_today</span>
+</div>
+<span class="font-bold font-body text-black">١٠ أكتوبر ٢٠٢٣</span>
+</div>
+<div class="col-span-3 flex justify-end">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-4 py-1.5 rounded-full text-sm font-bold flex items-center gap-1" style="color: black;">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            حاضر
+                        </span>
+</div>
+</div>
+<!-- Item 4: Late (Alternative Status) -->
+<!-- Item 5: Attended -->
+<div class="grid grid-cols-12 items-center bg-surface-container-lowest px-6 py-6 rounded-2xl editorial-shadow hover:bg-white transition-all group">
+<div class="col-span-5 md:col-span-6">
+<span class="font-headline font-semibold text-lg text-black">الخوارزميات وهياكل البيانات</span>
+</div>
+<div class="col-span-4 md:col-span-3 flex items-center gap-3">
+<div class="hidden md:flex w-10 h-10 rounded-full bg-secondary-fixed/30 items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-xl">calendar_today</span>
+</div>
+<span class="font-bold font-body text-black">٠٥ أكتوبر ٢٠٢٣</span>
+</div>
+<div class="col-span-3 flex justify-end">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-4 py-1.5 rounded-full text-sm font-bold flex items-center gap-1" style="color: black;">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            حاضر
+                        </span>
+</div>
+</div>
+</div>
+<!-- Pagination/Footer of List -->
+</section>
+<!-- Asymmetric Decorative Element -->
+</main>
+<!-- Footer -->
+</body></html>
