@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>منصة الأستاذ - رمز QR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#8af5be",
+                        "secondary": "#006c47",
+                        "outline": "#737785",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#ccd8ff",
+                        "tertiary-fixed": "#ffdad6",
+                        "inverse-primary": "#b2c5ff",
+                        "on-primary": "#ffffff",
+                        "primary": "#0040a1",
+                        "primary-container": "#0056d2",
+                        "on-primary-fixed-variant": "#0040a1",
+                        "on-secondary-fixed-variant": "#005235",
+                        "on-background": "#191c1d",
+                        "tertiary-container": "#ba1b20",
+                        "surface-variant": "#e1e3e4",
+                        "inverse-on-surface": "#f0f1f2",
+                        "tertiary": "#940010",
+                        "surface-container-low": "#f3f4f5",
+                        "secondary-fixed-dim": "#71dba6",
+                        "surface-container": "#edeeef",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#8df7c1",
+                        "primary-fixed": "#dae2ff",
+                        "on-secondary-container": "#00714b",
+                        "on-primary-fixed": "#001847",
+                        "surface-bright": "#f8f9fa",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "tertiary-fixed-dim": "#ffb3ac",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "surface-dim": "#d9dadb",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#2e3132",
+                        "on-tertiary-container": "#ffcdc8",
+                        "background": "#f8f9fa",
+                        "surface-container-high": "#e7e8e9",
+                        "surface": "#f8f9fa",
+                        "on-tertiary-fixed-variant": "#930010",
+                        "on-tertiary-fixed": "#410003",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-surface-variant": "#424654",
+                        "surface-tint": "#0056d2",
+                        "outline-variant": "#c3c6d6",
+                        "on-secondary-fixed": "#002113",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope", "IBM Plex Sans Arabic"],
+                        "body": ["Inter", "IBM Plex Sans Arabic"],
+                        "label": ["Inter", "IBM Plex Sans Arabic"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', 'IBM Plex Sans Arabic', sans-serif;
+        }
+        h1, h2, h3, .brand-font {
+            font-family: 'Manrope', 'IBM Plex Sans Arabic', sans-serif;
+        }
+        .qr-gradient {
+            background: linear-gradient(135deg, #0040a1 0%, #0056d2 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex items-center justify-center p-6">
+<!-- Main Content Area -->
+<main class="w-full max-w-2xl flex flex-col items-center justify-center text-center space-y-12">
+<!-- QR Code Container -->
+<div class="relative group w-full flex flex-col items-center">
+<div class="absolute -inset-2 bg-gradient-to-r from-primary to-primary-container rounded-[2.5rem] blur opacity-5 group-hover:opacity-10 transition duration-1000"></div>
+<div class="relative bg-surface-container-lowest p-10 md:p-14 rounded-[2.5rem] shadow-sm border border-outline-variant/15 flex flex-col items-center w-full">
+<div class="aspect-square w-64 md:w-80 bg-white p-4 rounded-3xl border border-outline-variant/10 shadow-inner flex items-center justify-center overflow-hidden">
+<div class="relative w-full h-full">
+<img alt="رمز الاستجابة السريعة للتحضير" class="w-full h-full object-contain" data-alt="A clean, high-contrast black and white QR code centered on a white background with sharp edges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0t-Xm3NyyuwaO7Fl8CVyk4gT3p_9mUpu8U5zF81A23oav3gompzDiNRvxtms8G9w_qv6A1ylx1I_9QjqsJsN2xNf19UAtxhUC_7i4Kfrw7K6xVwWjuqXPSZGEqyUOrEWWe-06NwgmQsMWItCA8txARzZAwmUlwnVa79aqf9Oppxo5s0WUEwH9_yOi2NVX_4ONRg33_AuAufCwS9mW3eXt177iSFt0KCxc4w5X1WkKg046Cy274vek4NGgaJL0gFp7hvgr7jMzMxIG"/>
+</div>
+</div>
+<div class="mt-10 flex items-center gap-4 text-sm font-medium text-slate-500">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-lg">verified</span>
+                        آمن ومحمي
+                    </span>
+<span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">timer</span>
+                        04:59
+                    </span>
+</div><div class="mt-8 grid grid-cols-2 gap-x-12 gap-y-4 text-center border-t border-outline-variant/10 pt-8 w-full max-w-md">
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold text-outline uppercase tracking-wider">المادة</span>
+<span class="text-on-surface font-semibold">علوم تجريبية</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold text-outline uppercase tracking-wider">الفوج</span>
+<span class="text-on-surface font-semibold">الفوج الأول</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold text-outline uppercase tracking-wider">السنة الدراسية</span>
+<span class="text-on-surface font-semibold">2023 - 2024</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold text-outline uppercase tracking-wider">الوقت</span>
+<span class="text-on-surface font-semibold">08:30 - 10:30</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Regenerate Button -->
+<button class="qr-gradient px-12 py-4 rounded-2xl text-on-primary font-bold text-lg flex items-center justify-center gap-3 shadow-xl shadow-blue-900/15 hover:scale-[1.02] active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined">refresh</span>
+            توليد رمز جديد
+        </button>
+</main>
+</body></html>
