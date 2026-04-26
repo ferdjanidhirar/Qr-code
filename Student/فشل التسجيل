@@ -1,1 +1,94 @@
+<!DOCTYPE html>
 
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Scholarly Canvas - Attendance Status</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#f8f9fa",
+                    "on-primary-container": "#ccd8ff",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#ffcdc8",
+                    "on-secondary-fixed-variant": "#005235",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#ba1b20",
+                    "surface-variant": "#e1e3e4",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#ffdad6",
+                    "on-secondary-container": "#00714b",
+                    "background": "#f8f9fa",
+                    "surface-dim": "#d9dadb",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#930010",
+                    "on-background": "#191c1d",
+                    "secondary": "#006c47",
+                    "inverse-primary": "#b2c5ff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface-container": "#edeeef",
+                    "surface-container-high": "#e7e8e9",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed": "#410003",
+                    "on-surface-variant": "#424654",
+                    "surface-container-low": "#f3f4f5",
+                    "on-secondary-fixed": "#002113",
+                    "inverse-surface": "#2e3132",
+                    "surface-tint": "#0056d2",
+                    "on-primary-fixed-variant": "#0040a1",
+                    "secondary-fixed-dim": "#71dba6",
+                    "on-surface": "#191c1d",
+                    "secondary-fixed": "#8df7c1",
+                    "tertiary": "#940010",
+                    "outline": "#737785",
+                    "outline-variant": "#c3c6d6",
+                    "primary-container": "#0056d2",
+                    "surface-container-highest": "#e1e3e4",
+                    "primary": "#0040a1",
+                    "primary-fixed-dim": "#b2c5ff",
+                    "on-primary-fixed": "#001847",
+                    "tertiary-fixed-dim": "#ffb3ac",
+                    "surface-bright": "#f8f9fa",
+                    "primary-fixed": "#dae2ff",
+                    "secondary-container": "#8af5be"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope", "sans-serif"],
+                    "display": ["Manrope", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest min-h-screen flex items-center justify-center overflow-hidden">
+<!-- Focused Error Canvas -->
+<main class="w-full h-full flex items-center justify-center px-8 text-center">
+<h1 class="font-display font-extrabold text-4xl md:text-5xl lg:text-6xl text-tertiary tracking-tight leading-tight">
+            لم يتم تسجيل حضورك، يرجى إعادة المحاولة
+        </h1>
+</main>
+</body></html>
